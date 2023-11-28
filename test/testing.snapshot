@@ -1,0 +1,92 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "82219c00-f813-319b-b25f-76f8fd6be6e9",
+        "inputPorts" : [ ],
+        "instanceIdentifier" : "16bde421-018c-1000-44aa-1a76d029831d",
+        "labels" : [ ],
+        "name" : "jhk",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 285.0,
+          "y" : 370.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-stateful-analysis-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "82219c00-f813-319b-b25f-76f8fd6be6e9",
+          "identifier" : "1e75c830-a17b-37d9-a221-c91e0cd81109",
+          "instanceIdentifier" : "16bdf6ac-018c-1000-2968-ff1a35115b45",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "AttributeRollingWindow",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 584.0,
+            "y" : 118.0
+          },
+          "properties" : { },
+          "propertyDescriptors" : {
+            "Value to track" : {
+              "displayName" : "Value to track",
+              "identifiesControllerService" : false,
+              "name" : "Value to track",
+              "sensitive" : false
+            },
+            "Time window" : {
+              "displayName" : "Time window",
+              "identifiesControllerService" : false,
+              "name" : "Time window",
+              "sensitive" : false
+            },
+            "Sub-window length" : {
+              "displayName" : "Sub-window length",
+              "identifiesControllerService" : false,
+              "name" : "Sub-window length",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.stateful.analysis.AttributeRollingWindow",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { },
+      "parameterProviders" : { }
+    }
+  }
+}
